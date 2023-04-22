@@ -59,7 +59,7 @@ kubectl apply -f hairpin.yaml
 
 [root@ip-172-30-2-95 ingressctl]# k get ingress
 NAME                       CLASS   HOSTS                                 ADDRESS          PORTS     AGE
-hello-kubernetes-ingress   nginx   app1.merikech.com,app2.merikech.com   143.42.222.246   80, 443   3h8m
+hello-kubernetes-ingress   nginx   sub1.domain.com,sub2.domain.com   xxx.xxx.xxx.xxx   80, 443   3h8m
 [root@ip-172-30-2-95 ingressctl]#
 
 
