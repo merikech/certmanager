@@ -55,18 +55,18 @@ kubectl apply -f Ingress.yaml
 
 kubectl apply -f hairpin.yaml
 
-9- Check 
+9- Check ingress and certificate
 
-[root@ip-172-30-2-95 ingressctl]# k get ingress
+k get ingress
 NAME                       CLASS   HOSTS                                 ADDRESS          PORTS     AGE
 hello-kubernetes-ingress   nginx   sub1.domain.com,sub2.domain.com   xxx.xxx.xxx.xxx   80, 443   3h8m
-[root@ip-172-30-2-95 ingressctl]#
 
 
-[root@ip-172-30-2-95 ingressctl]# k get certificate
+
+k get certificate
 NAME             READY   SECRET           AGE
 kubernetes-tls   True    kubernetes-tls   3h8m
-[root@ip-172-30-2-95 ingressctl]#
+
 
 
 
