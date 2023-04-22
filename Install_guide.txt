@@ -51,7 +51,11 @@ kubectl apply -f clusterissuer.yaml
 
 kubectl apply -f Ingress.yaml
 
-8- Check 
+8- Install hairpin proxy
+
+kubectl apply -f hairpin.yaml
+
+9- Check 
 
 [root@ip-172-30-2-95 ingressctl]# k get ingress
 NAME                       CLASS   HOSTS                                 ADDRESS          PORTS     AGE
